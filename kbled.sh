@@ -62,21 +62,6 @@ notice () {
   done
 }
 
-notice () {
-  while true
-  do
-   xset -led named "Scroll Lock"
-   sleep 2s
-   for ((i=0; i<20; i++))
-   do
-    xset led named "Scroll Lock" 
-    sleep .05s
-    xset -led named "Scroll Lock" 
-    sleep .05s
-   done
-  done
-}
-
 
 sine () {
   while true
@@ -97,8 +82,6 @@ sine () {
     xset -led named "Scroll Lock" 
     sleep $sTime
    done
-   xset -led named "Scroll Lock"
-   sleep 2s
   done
 }
 
